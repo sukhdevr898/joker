@@ -110,7 +110,7 @@ bash game.sh
 ;;
 5)
 
-wget -q --spider
+wget -q --spider https://raw.githubusercontent.com/sukhdevr898/joker/main/update1.0
 if [ $? -eq 0 ];
 then 
 echo -e "\e[96m\t\t\t |------------------------------------------------------|"
