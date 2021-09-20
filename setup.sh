@@ -90,3 +90,4 @@ echo -e "\e[94m \n\tNOW JUST TYPE 'joker' IN HOME DIRECTORY \n\t AND RUN TOOL DI
 echo -e "\e[94m \n\t-------------------------"
 rm setup.sh
 bash joker.sh
+fi
