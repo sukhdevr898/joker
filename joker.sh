@@ -121,13 +121,14 @@ else
 echo -e "\e[96m\t\t\t |------------------------------------------------------|"   
 echo -e "\e[96m\t\t\t |    UPDATE AVAILABLE  [✓]                             |"
 echo -e "\e[96m\t\t\t |------------------------------------------------------|"
+fi
 echo -e "DO YOU WANT TO UPDATE THIS TOOL "
 read -p "Y OR N " UP
 if [ $OP == "y" | $OP == "Y" ];
 then
 cd $HOME
-#rm joker
-#git clone 
+rm -rf joker
+git clone https://github.com/sukhdevr898/joker
 cd joker
 bash setup.sh
 else
