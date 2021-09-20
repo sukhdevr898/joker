@@ -223,6 +223,9 @@ echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━�
 fi
 done
 ;;
+00)
+bash joker.sh
+;;
 esac
 
 elif [ $OP == 2 ];
@@ -355,6 +358,9 @@ echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━�
 fi
 done
 ;;
+00)
+bash joker.sh
+;;
 esac
 elif [ $OP == 3 ];
 then
@@ -459,7 +465,14 @@ echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━�
 fi
 done
 ;;
+00)
+bash joker.sh
+;;
+
 esac
+elif [ $OP == 00 ];
+then 
+bash joker.sh
 
 else
 clear
