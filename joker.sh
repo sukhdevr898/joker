@@ -126,16 +126,25 @@ echo -e "\e[96m\t\t\t |------------------------------------------------------|"
 fi
 echo -e "DO YOU WANT TO UPDATE THIS TOOL "
 read -p "Y OR N " UP
-if [ $UP == "y" | $UP == "Y" ];
-then
+case $UP in
+Y)
 cd $HOME
 rm -rf joker
-git clone https://github.com/sukhdevr898/joker
+git clone https://github.com/sukhdevr898/joker/
+ cd joker
+bash setup.sh
+;;
+y)
+cd $HOME
+rm -rf joker
+git clone https://github.com/sukhdevr898/joker/
 cd joker
 bash setup.sh
-else
+;;
+*)
+
 bash joker.sh
-fi
+esac
 ;;
 6) 
 exit 1
