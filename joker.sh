@@ -109,7 +109,9 @@ clear
 bash game.sh
 ;;
 5)
-
+echo -e "\e[98m\t\t\t PLEASE WAIT.....!"
+echo -e "\e[98m\t\t\t UPDATE CHECKING.....!"
+sleep 5.0
 wget -q --spider https://raw.githubusercontent.com/sukhdevr898/joker/main/update1.0
 if [ $? -eq 0 ];
 then 
