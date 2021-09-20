@@ -59,8 +59,8 @@ echo -e "\e[96m        |                [\e[92m4\e[96m]==> ABOUT                
 echo -e "\e[96m        |                [\e[92m5\e[96m]==> UPDATE                        |                                    |"
 echo -e "\e[96m        |                [\e[92m6\e[96m]==> EXIT                          |                                    |"
 echo -e "\e[96m        |                [\e[92m7\e[96m]==> CHECK SPEED                   |                                    |"
-echo -e "\e[96m        |                                                                 |                                    |"
-echo -e "\e[96m        |                                                     |                                    |"
+echo -e "\e[96m        |                [\e[93m00\e[98m]==> DEBUGGING MODE                |                                    |"
+echo -e "\e[96m        |                                                     |                                                |"
 echo -e "\e[96m        |-----------------------------------------------------|                                    |"
 echo -e "\e[96m        |---------------------\e[91mHACK3R\e[96m----------------------|                                    |"
 echo -e "\e[96m        |-----------------------------------------------------|                                    |"
@@ -151,6 +151,11 @@ exit 1
 ;;
 7)
 bash spd.sh
+;;
+00)
+clear
+echo -e "\e[98m DEBUGGING MODE STARING.....!!"
+bash -x joker.sh
 ;;
 *)
 echo -e "\e[96m\t\t\t |------------------------------------------------------|"   
