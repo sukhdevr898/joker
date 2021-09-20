@@ -126,7 +126,7 @@ echo -e "\e[96m\t\t\t |------------------------------------------------------|"
 fi
 echo -e "DO YOU WANT TO UPDATE THIS TOOL "
 read -p "Y OR N " UP
-if [ $OP == "y" | $OP == "Y" ];
+if [ $UP == "y" | $UP == "Y" ];
 then
 cd $HOME
 rm -rf joker
