@@ -50,7 +50,7 @@ echo -e "=> \e[1;96m[\e[0m\e[92m pip INSTALLED....[✓]\e[0m\e[1;96m]"
 pkg install python2 
 echo -e "                             => \e[1;96m[\e[0m\e[92m PYTHON2 INSTALLED....[✓]\e[0m\e[1;96m]"
 
-
+uzip zites.zip
 
 ############################ngrok 
 
