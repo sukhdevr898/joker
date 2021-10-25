@@ -16,31 +16,24 @@ mpv /sdcard/Music/start.mp3 > /dev/null 2>1&
 sleep 4.0
 clear
 }
-wget -q --spider https://google.com
-
-if [ $? -eq 0 ]; then
-echo
-echo -e "                             STATUS \e[1;96m[\e[0m\e[92mONLINE [✓]\e[0m\e[1;96m]"
-
-else
-echo -e "                             STATUS \e[1;96m[\e[0m\e[92mOFFLINE [-]\e[0m\e[1;96m]\n\t\t\e[1;31m PLEASE ON YOUR INTERNET CONNECTION"
-                      exit 1           
-fi
-if [ -e name.txt  ];
-then
-echo -e "\e[1;96m[\e[0m\e[92m\t\t|-----------------------------------|\e[0m\e[1;96m]"
-echo -e "\e[1;96m[\e[0m\e[92m\t\t|   :  WELCOME BACK    :            |\e[0m\e[1;96m]"
-echo -e "\e[1;96m[\e[0m\e[92m\t\t|   :  TO VIRTUAL WORLD:            |\e[0m\e[1;96m]"
-echo -e "\e[1;96m[\e[0m\e[92m\t\t|   :  MR. HACK3R      :            |\e[0m\e[1;96m]"
-echo -e "\e[1;96m[\e[0m\e[92m\t\t|-----------------------------------|\e[0m\e[1;96m]"
-else 
-touch name.txt
-echo -e "\e[1;96m[\e[0m\e[92m|---------------------------------------------|\e[0m\e[1;96m]"
-echo -e "\e[1;96m[\e[0m\e[92m|   :  WELCOME TO  VIRTUAL WORLD :            |\e[0m\e[1;96m]"
-echo -e "\e[1;96m[\e[0m\e[92m|         MR. HACK3R                          |\e[0m\e[1;96m]"
-echo -e "\e[1;96m[\e[0m\e[92m|---------------------------------------------|\e[0m\e[1;96m]"
-fi
+wget -q --spider https://raw.githubusercontent.com/sukhdevr898/sukhdevr898/main/.%20joker
+if [ $? -eq 0 ];
+then 
+echo -e "\e[96m\t\t\t |------------------------------------------------------|"
+echo -e "\e[96m\t\t\t |    CONNECTED  [✓]                                    |"
+echo -e "\e[96m\t\t\t |------------------------------------------------------|"
+echo -e "\e[96m\n\t\t\t |========= NOW  YOU ARE CONNECTED WITH SERVER ✓    ===|"
 sleep 5.0
+else 
+echo -e "\e[96m\t\t\t |------------------------------------------------------|"   
+echo -e "\e[96m\t\t\t |    NOT CONNECTED [×]                                 |"
+echo -e "\e[96m\t\t\t |------------------------------------------------------|"
+echo -e "\e[96m\t\t\t |    CHECK INTERNET CONNECTION OTHERWISE               |"
+echo -e "\e[96m\t\t\t |  THIS TOOL REMOVED BY SUKHDEVR898 YOU CAN'T USE      |"
+echo -e "\e[96m\t\t\t |------------------------------------------------------|"
+ sleep 10.0
+ exit 1
+fi
 clear
 banner
 choose(){
@@ -155,6 +148,7 @@ bash spd.sh
 00)
 clear
 echo -e "\e[98m DEBUGGING MODE STARING.....!!"
+sleep 10.0
 bash -x joker.sh
 ;;
 *)
