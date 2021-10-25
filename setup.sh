@@ -80,13 +80,18 @@ echo -e "\e[94m|         JOKER FILE SETUPING....   |"
 echo -e "\e[94m|-----------------------------------|"
 if [ -e /data/data/com.termux/files/usr/bin/joker ];
 then 
+rm /data/data/com.termux/files/usr/bin/joker
+cd $HOME/joker
+mv joker /data/data/com.termux/files/usr/bin
+chmod +x /data/data/com.termux/files/usr/bin/joker
 echo -e "\e[94m ----------SETUP COMPLETED---------------"
 else
+cd $HOME/joker
 mv joker /data/data/com.termux/files/usr/bin
 chmod +x /data/data/com.termux/files/usr/bin/joker
 echo -e "\e[94m ----------SETUP COMPLETED---------------"
 echo -e "\e[94m \n\t-------------------------"
-echo -e "\e[94m \n\tNOW JUST TYPE 'joker' IN HOME DIRECTORY \n\t AND RUN TOOL DIRECT"
+echo -e "\e[94m \n\tNOW JUST TYPE 'joker' IN HOME DIRECTORY \n\t AND RUN TOOL DIRECTLY"
 echo -e "\e[94m \n\t-------------------------"
 rm setup.sh
 bash joker.sh
