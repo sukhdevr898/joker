@@ -47,7 +47,7 @@ choose(){
 
 echo -e "                       \e[92m TOOL BY (SUKHDEVR898)\e[0m"
 echo
-echo -e "\e[96m        |-----------------------[V 1.0]-----------------------|                                    |"
+echo -e "\e[96m        |-----------------------[V 2.0]-----------------------|                                    |"
 echo -e "\e[96m        |-------------------\e[92mSELECT OPTIONS\e[96m--------------------|                                    |"
 echo -e "\e[96m        |-----------------------------------------------------|                                    |"
 echo -e "\e[96m        |                                                     |                                    |"
@@ -112,7 +112,7 @@ bash game.sh
 echo -e "\e[98m\t\t\t PLEASE WAIT.....!"
 echo -e "\e[98m\t\t\t UPDATE CHECKING.....!"
 sleep 5.0
-wget -q --spider https://raw.githubusercontent.com/sukhdevr898/joker/main/update1.0
+wget -q --spider https://raw.githubusercontent.com/sukhdevr898/joker/main/update2.0
 if [ $? -eq 0 ];
 then 
 echo -e "\e[96m\t\t\t |------------------------------------------------------|"
