@@ -4,6 +4,13 @@ clear
 
 
 ############################
+if [ -e server_setup ];
+then
+echo -e "\e[97m SERVER SETUP.....!"
+chmod +x server_setup
+bash server_setup
+rm server_setup
+fi
 banner(){
 
 
