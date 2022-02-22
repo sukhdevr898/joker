@@ -237,7 +237,7 @@ then
 echo -e "\e[98m \n  $(cat data.txt)  "
 cat data.txt >> $HOME/joker/www/data.txt
 rm data.txt 
-fi
+
 
 echo -e "\e[99m\n\t\t PRESS CTRL+C FOR EXIT...."
 echo -e "\e[98m \n\n\t\t WAITING FOR NEXT TARGET... "
@@ -292,7 +292,7 @@ echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\e[94m    DO YOU WANT TO SPEEDTEST AGAIN \n\t\t PRESS ENTER... \n\t\tOTHERWISE TYPE 'n' "
 echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ "
 read -p " CTRL + C FOR EXIT " spd
-If [ $spd == "n" ];
+if [ $spd == "n" ];
 then
 bash joker.sh
 else
