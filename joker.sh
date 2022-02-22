@@ -1,9 +1,22 @@
 clear
 ##############################
+update (){
+echo -e "\e[96m\t\t\t |------------------------------------------------------|"   
+
+echo -e "\e[96m\t\t\t |             UPDATING....!                            |"
+
+echo -e "\e[96m\t\t\t |------------------------------------------------------|"
+
+cd $HOME
+rm -rf joker 
+git clone https://github.com/sukhdevr898/joker > /dev/null 2>1&
+cd joker 
+bash setup.sh 
+}
 flare(){
 echo -e "\e[96m        |=====================================================|"
 echo -e "\e[96m        |                      CLOUDFLARED SERVER             |"
-echo -e "\e[96m        |         copy this command =>(  bash flare.sh   )    |"
+echo -e "\e[96m        |         copy this command =>(  flare   )            |"
 echo -e "\e[96m        |     OPEN NEW SESSION AND RUN ABOVE COMMAND          |"
 echo -e "\e[96m        |=====================================================|"
 
@@ -255,6 +268,8 @@ then
 echo -e "\e[96m\t\t\t |------------------------------------------------------|"
 echo -e "\e[96m\t\t\t |    TOOL ARLEADY UPDATED VERSION    [✓]               |"
 echo -e "\e[96m\t\t\t |------------------------------------------------------|"
+
+sleep 5.0
 bash joker.sh
 else 
 echo -e "\e[96m\t\t\t |------------------------------------------------------|"   
@@ -265,18 +280,18 @@ echo -e "DO YOU WANT TO UPDATE THIS TOOL "
 read -p "Y OR N " UP
 case $UP in
 Y)
-cd $HOME
-rm -rf joker
-git clone https://github.com/sukhdevr898/joker/
- cd joker
-bash setup.sh
+
+
+
+update 
+
+
+
+
+
 ;;
 y)
-cd $HOME
-rm -rf joker
-git clone https://github.com/sukhdevr898/joker/
-cd joker
-bash setup.sh
+update 
 ;;
 *)
 
