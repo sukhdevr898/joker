@@ -136,7 +136,7 @@ mpv /sdcard/Music/start.mp3 > /dev/null 2>1&
 sleep 4.0
 clear
 }
-wget -q --spider https://raw.githubusercontent.com/sukhdevr898/sukhdevr898/main/.%20joker
+wget -q --spider https://raw.githubusercontent.com/sukhdevr898/joker/main/update2.1
 if [ $? -eq 0 ];
 then 
 echo -e "\e[96m\t\t\t |------------------------------------------------------|"
@@ -160,7 +160,7 @@ choose(){
 
 echo -e "                       \e[92m TOOL BY (SUKHDEVR898)\e[0m"
 echo
-echo -e "\e[96m        |-----------------------[V 2.0]-----------------------------------|     |"
+echo -e "\e[96m        |-----------------------[V 2.1]-----------------------------------|     |"
 echo -e "\e[96m        |-------------------\e[92mSELECT OPTIONS\e[96m--------------------|     |"
 echo -e "\e[96m        |-----------------------------------------------------------------|     |"
 echo -e "\e[96m        |                                                                 |     |"
