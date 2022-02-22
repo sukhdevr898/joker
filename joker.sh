@@ -79,6 +79,8 @@ echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\n"
 echo -e "\e[94m\n┃---------VICTIM'S IP FOUND---------┃"
 echo -e "\e[94m\n┃-------  (SAVE IN IP.TXT)  -------┃"
+echo -e "\n"
+cat ip.txt
 rm ip.txt
 echo -e "\n"
 fi
