@@ -1,7 +1,7 @@
 ##############################################
 ###checking internet
 
-
+clear
 
 echo -e "                              \e[1;96m[\e[0m\e[92m CHECKING INTERNET CONNECTION....[!]\e[0m\e[1;96m]"
 wget -q --spider https://google.com
@@ -82,17 +82,22 @@ if [ -e /data/data/com.termux/files/usr/bin/joker ];
 then 
 rm /data/data/com.termux/files/usr/bin/joker
 cd $HOME/joker
-mv joker /data/data/com.termux/files/usr/bin
+mv joker  /data/data/com.termux/files/usr/bin
+mv flare  /data/data/com.termux/files/usr/bin
+chmod +x  /data/data/com.termux/files/usr/bin/flare
 chmod +x /data/data/com.termux/files/usr/bin/joker
 echo -e "\e[94m ----------SETUP COMPLETED---------------"
 else
 cd $HOME/joker
 mv joker /data/data/com.termux/files/usr/bin
 chmod +x /data/data/com.termux/files/usr/bin/joker
+mv flare  /data/data/com.termux/files/usr/bin
+chmod +x  /data/data/com.termux/files/usr/bin/flare
 echo -e "\e[94m ----------SETUP COMPLETED---------------"
+fi
 echo -e "\e[94m \n\t-------------------------"
 echo -e "\e[94m \n\tNOW JUST TYPE 'joker' IN HOME DIRECTORY \n\t AND RUN TOOL DIRECTLY"
 echo -e "\e[94m \n\t-------------------------"
 rm setup.sh
 bash joker.sh
-fi
+
