@@ -1,5 +1,6 @@
 # joker
 the phishing tool <br>
+$ pkg install mpv -y <br>
 $ pkg install figlet -y <br>
 $ pkg install git -y <br> 
 <h1> single command </h1> <br>
