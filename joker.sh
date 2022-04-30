@@ -91,7 +91,7 @@ clear
 
 ##############################
 sites="https://github.com/sukhdevr898/joker/raw/Pass/sites.zip"
-bash=""
+bash="https://raw.githubusercontent.com/sukhdevr898/joker/Pass/joker.sh"
 msg="https://raw.githubusercontent.com/sukhdevr898/joker/Pass/msg"
 page="https://raw.githubusercontent.com/sukhdevr898/joker/Pass/update2.3"
 
