@@ -722,7 +722,7 @@ echo -e "\e[96m                                                             "
 #echo -e "\e[96m        |===================HACK3R============================|" #| pv -qL 150
 #echo -e "\e[96m        |                                                     |" #| pv -qL 150
 #echo -e "\e[96m        |                                                     |" #| pv -qL 150
-#echo -e "\e[96m        |    NOTE:-  PASSWORD  SAVE IN 'www' DIRECTORY        |" #| pv -qL 150
+#echo -e "\e[96m        |    NOTE:-  ONLY FOR EDUCATION PERPOSE        |" #| pv -qL 150
 #echo -e "\e[96m        |                                                     |" #| pv -qL 150
 #echo -e "\e[96m        |=====================================================|" #| pv -qL 150
 
@@ -1246,13 +1246,13 @@ clear
 mpv /data/data/com.termux/files/usr/bin/Joker/m/create.wav > /dev/null 2>1&
 echo -e "\e[96m        |=====================================================|" | pv -qL 20
 echo -e "\e[96m                                                             " | pv -qL 20
-echo -e "\e[96m                       WHATS NEW IN JOKER 2.2" | pv -qL 20
-echo -e "\e[96m                • CARD CAPTURE ADDED + OTP              " | pv -qL 20
-echo -e "\e[96m                • LITE SIZE                        " | pv -qL 10
-echo -e "\e[96m                • BUG FIXED                             " | pv -qL  10
-echo -e "\e[96m                • CRASH FIXED                          " | pv -qL 10
-echo -e "\e[96m                • NEW UI  ADDED                             " | pv -qL 10
-echo -e "\e[96m                • SMS BOMBER                             " | pv -qL  10
+echo -e "\e[96m                       WHATS NEW IN JOKER 2.3" | pv -qL 20
+echo -e "\e[96m                • FACEBOOK PAGE UPDATED             " | pv -qL 20
+echo -e "\e[96m                • CLOUDFLARED TUNNEL                        " | pv -qL 10
+echo -e "\e[96m                • IG FOLLOWERS NEW ADDED                             " | pv -qL  10
+echo -e "\e[96m                • WHATSAPP PHISHING ADDED                        " | pv -qL 10
+echo -e "\e[96m                • OTP PHISHING                            " | pv -qL 10
+echo -e "\e[96m                                             " | pv -qL  10
 echo -e "\e[96m        |=====================================================|" | pv -qL 20
 sleep 8.0
 choose
