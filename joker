@@ -1,5 +1,0 @@
-cd $HOME/joker
-echo -e "\e[98m TOOL STARTING..... "
-sleep 2.0
-
-bash joker.sh
