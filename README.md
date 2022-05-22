@@ -5,7 +5,7 @@
 <a href="https://github.com/sukhdevr898/joker"><img title="GitHub version" src="https://img.shields.io/badge/version-2.3-blue" ></a>  
 </p>
 
-<img src="joker/20220522_090700.png">
+<img src="https://raw.githubusercontent.com/sukhdevr898/joker/main/20220522_090700.png">
 <p align="center">
   <b> Follow on Social Media Platforms </b>
 </p>
