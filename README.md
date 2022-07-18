@@ -31,11 +31,8 @@ When victim enter his credentials, you need to go to original website and use th
 ![1](https://github.com/sukhdevr898/joker/raw/main/IMG_20220430_125202.jpg)
 ![2](https://raw.githubusercontent.com/sukhdevr898/joker/main/IMG_20220430_125242.jpg)
 ![3](https://raw.githubusercontent.com/sukhdevr898/joker/main/IMG_20220430_125300.jpg)
-![4](https://raw.githubusercontent.com/sukhdevr898/joker/main/f34cff3277109a21f812daa516c1ea25.mp4)
+
 <br>
 <br>
 ### INSTALLATION
-- copy this command -
-````
-$ wget https://raw.githubusercontent.com/sukhdevr898/joker/Pass/setup.sh
-```
+- [click here](index.md)
