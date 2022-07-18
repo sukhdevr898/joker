@@ -35,4 +35,5 @@ When victim enter his credentials, you need to go to original website and use th
 <br>
 <br>
 ### INSTALLATION
-- [click here](index.md)
+<p align="center">
+<a href="index.md"> Click here </a></p>
