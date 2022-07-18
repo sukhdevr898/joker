@@ -74,7 +74,10 @@ echo -e "\e[94m|-----------------------------------|"
 if [ -e /data/data/com.termux/files/usr/bin/joker ];
 then 
 rm /data/data/com.termux/files/usr/bin/joker
-cd $HOME/joker
+echo "clear" >> joker
+echo " echo 'Tool starting...'" >> joker
+
+bash JOKER/joker.sh >> joker
 mv joker /data/data/com.termux/files/usr/bin
 chmod +x /data/data/com.termux/files/usr/bin/joker
 echo -e "\e[94m ----------SETUP COMPLETED---------------"
@@ -87,11 +90,12 @@ cd /data/data/com.termux/files/usr/bin/JOKER
 
 wget --show-progress https://github.com/sukhdevr898/joker/raw/Pass/sites.zip
 wget --show-progress https://github.com/sukhdevr898/joker/raw/Pass/m.zip
+wget --show-progress https://raw.githubusercontent.com/sukhdevr898/joker/Pass/joker.sh
 unzip sites.zip
 unzip m.zip
 rm m.zip
 rm sites.zip
-
+chmod +x joker.sh
 
 echo -e "\e[94m ----------SETUP COMPLETED---------------"
 
