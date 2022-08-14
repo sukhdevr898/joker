@@ -1190,8 +1190,6 @@ option
 choose(){
 clear
 #mpv start.mp3 > /dev/null 2>1&
-whiptail --textbox msg  --title "ADMIN NOTICE" 30 50 3>&1 1>&2 2>&3
-
 
 echo -e "                       \e[92m TOOL BY (SUKHDEVR898)\e[0m"
 echo 
