@@ -2,7 +2,7 @@
   <a><img title="Built With Love" src="https://forthebadge.com/images/badges/uses-html.svg" ></a>
  </p>
 <p align="center">
-<a href="https://github.com/sukhdevr898/joker"><img title="GitHub version" src="https://img.shields.io/badge/version-2.3-blue" ></a>  
+<a href="https://github.com/sukhdevr898/joker"><img title="GitHub version" src="https://img.shields.io/badge/version-2.4-blue" ></a>  
 </p>
 
 <img src="https://raw.githubusercontent.com/sukhdevr898/joker/main/20220522_090700.png">
