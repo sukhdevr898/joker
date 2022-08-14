@@ -15,11 +15,11 @@
 
 
 
-### joker2.3
+### joker2.4
 the phishing tool <br>
 * pkg install git -y 
 * pkg install figlet -y 
-
+* pkg install whiptail -y
 
 
 ### TECHNIQUE
