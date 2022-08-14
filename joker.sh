@@ -1170,12 +1170,12 @@ mpv /data/data/com.termux/files/usr/bin/Joker/m/create.wav > /dev/null 2>1&
 echo -e "\e[96m        |=====================================================|" | pv -qL 20
 echo -e "\e[96m                                                             " | pv -qL 20
 echo -e "\e[96m                       WHATS NEW IN JOKER 2.4" | pv -qL 20
-echo -e "\e[96m                • CARD CAPTURE ADDED + OTP              " | pv -qL 20
+echo -e "\e[96m                • WHIPLAIT ADDED               " | pv -qL 20
 echo -e "\e[96m                • LITE SIZE                        " | pv -qL 10
 echo -e "\e[96m                • BUG FIXED                             " | pv -qL  10
 echo -e "\e[96m                • CRASH FIXED                          " | pv -qL 10
-echo -e "\e[96m                • NEW UI  ADDED                             " | pv -qL 10
-echo -e "\e[96m                • SMS BOMBER (Speed)                            " | pv -qL  10
+echo -e "\e[96m                • SMS BOMBER (New Api 🔆)                             " | pv -qL 10
+echo -e "\e[96m                                            " | pv -qL  10
 echo -e "\e[96m        |=====================================================|" | pv -qL 20
 sleep 8.0
 choose
@@ -1195,7 +1195,7 @@ echo -e "                       \e[92m TOOL BY (SUKHDEVR898)\e[0m"
 echo 
 wget ifconfig.me/ip > /dev/null 2>1&
  echo -e "           \e[1;92m (YOUR IP : $(cat ip))\e[0m"
-echo -e "\e[96m||━━━━━━━━━━━━━━━━━━━━━━━━━━[V 2.3]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━||"
+echo -e "\e[96m||━━━━━━━━━━━━━━━━━━━━━━━━━━[V 2.4]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━||"
 echo -e "\e[96m||------------------------\e[92mSELECT OPTIONS\e[96m--------------------------||"
 echo -e "\e[96m||━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━||"
 echo -e "\e[96m                                                                "
@@ -1230,7 +1230,7 @@ echo -e "\e[96m\t\t\t " | pv -qL 100
 
 fi
 
-
+figlet -f big AJAADI KA AMRIT MAHOTSAV 
 
 
 read -p " SELECT A OPTION :    " OP
